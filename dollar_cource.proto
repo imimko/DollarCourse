@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service Dollarcourse {
+    rpc GetCourse(Mes) returns (Course);
+}
+
+message Mes {}
+
+message Course {
+    float price = 1;
+}
